@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2017 Hurricanes</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <h1>Rainfall Data for 2017 Hurricanes</h1>
+  <p>Hurricane Harvey, Irma and Maria devastated Texas, Florida and Puerto Rico, respectively, in 2017. According to <a href="https://www.weather.gov/ewx/wxevent-2017harvey">the National Oceanic and Atmospheric Administration</a>, Hurricane Harvey was the first major hurricane to hit Texas since Hurricane Bret in 1999, and the first major hurricane to make landfall in the continental U.S. since Hurricane Wilma in 2005. Hitting Texas as a Category 4, winds reached more than 130 mph and some areas experienced more than 29 inches of rain.
+  <br>
+  <br>
+  Hurricane Irma reached wind speeds of 185 mph, making it a Category 5 hurricane for three days, according to <a href="https://www.weather.gov/tae/Irma_technical_summary">the National Oceanic Atmospheric Association.</a> Irma caused flooding in parts of South Carolina, Georgia and Florida, including large amounts of storm surge flooding and long periods of rain. It also caused more than 6.5 million customers in Florida to live without power.
+  <br>
+  <br>
+  Hurricane Maria hit Puerto Rico as a Category 4, with winds stronger than 155 mph. Heavy rain caused flooding and did major damage, specifically to the Northern side of Puerto Rico, according to <a href="http://www.weather.gov/sju/maria2017">the National Oceanic and Atmospheric Administration.</a> Some areas also experienced more than 25 inches of rain. Damage was done to farms and houses, among other things, and more than 300 were sunk because of intense winds.
+  <br>
+  <br>
+  <strong>View rainfall data (in inches) for Texas, Florida and Puerto Rico below.</strong></p>
+
+  <div id="map"></div>
+
+  <script src="scripts/places.json"></script>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
