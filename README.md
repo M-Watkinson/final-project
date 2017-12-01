@@ -21,3 +21,7 @@ Rainfall data (from NOAA):
 [Irma](http://www.wpc.ncep.noaa.gov/winter_storm_summaries/storm20/stormsum_7.html)
 
 [Maria](http://www.weather.gov/sju/maria2017)
+
+## Week 2
+
+This week I completed the next steps of my project, which were to create the Florida and Puerto Rico maps. For the most part, it was pretty straight forward and easy. The only trouble I ran into was that the data I had for Hurricane Maria didn't give the specific locations. To tackle this, I pulled up another map of Hurricane Maria without the rainfall data and compared the two to figure out the locations. I am also starting to think of the layout and CSS. I tried a scrollytelling method with Scrollama, but I had some trouble with it. I will focus on the layout portion in the following week though. 
