@@ -36,3 +36,62 @@ for (var i=0; i < locations.length; i++) {
   .bindPopup('<h3>' + locations[i].placeName + '</h3>' + '<p>' + locations[i].rainfall + '</p>')
   .addTo(ricomap);
 }
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Normal vs. Hurricane Rainfall'
+    },
+    subtitle: {
+        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+    },
+    xAxis: {
+        categories: ['Texas in August', 'Florida in September', 'Puerto Rico in September'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Average Rainfall (inches)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'inches'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Normal Rainfall',
+        data: [2.5, 6.9, 8.92]
+    }, {
+        name: 'Hurricane Rainfall',
+        data: [37.72, 10.27, 21.26]
+    }]
+});
