@@ -7,26 +7,29 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">2017 Hurricanes</a>
-      </div>
-      <div>
-      <ul class="nav navbar-nav">
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#harvey">Harvey</a></li>
-        <li><a href="#irma">Irma</a></li>
-        <li><a href="#maria">Maria</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+<section id="bar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">2017 Hurricanes</a>
     </div>
-    </div>
-  </nav>
+    <ul class="nav navbar-nav">
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#data">Rainfall</a></li>
+      <li><a href="#harvey">Harvey</a></li>
+      <li><a href="#irma">Irma</a></li>
+      <li><a href="#maria">Maria</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+</section>
 
   <section id="impact">
     <h1>The Impact</h1>
@@ -35,29 +38,44 @@
     <p>Hurricane Maria hit Puerto Rico as a Category 4, with winds stronger than 155 mph. Heavy rain caused flooding and did major damage, specifically to the Northern side of Puerto Rico, according to <a href="http://www.weather.gov/sju/maria2017">the National Oceanic and Atmospheric Administration.</a> Some areas also experienced more than 25 inches of rain. Damage was done to farms and houses, among other things, and more than 300 were sunk because of intense winds.</p>
   </section>
 
-  <div id="data">
+  <section id="data">
     <h1>The Data</h1>
-  </div>
+  </section>
 
-      <section id="graph">
-        <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
-      </section>
+    <div id="graph">
+      <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+      <div class="description">
+        <p>Normal average rainfall for Texas, Florida and Puerto Rico in a month compared to the rainfall each place experienced during the hurricanes.</p>
+      </div>
+    </div>
 
       <section id="harvey">
         <div id="map"></div>
+        <div class="description">
+          <p>Click on the markers to view the rainfall (in inches) in specific parts of Texas from Hurricane Harvey.</p>
+        </div>
       </section>
 
       <section id="irma">
         <div id="fl"></div>
+        <div class="description">
+          <p>Click on the markers to view the rainfall (in inches) in specific parts of Florida from Hurricane Irma.</p>
+        </div>
       </section>
 
       <section id="maria">
         <div id="rico"></div>
+        <div class="description">
+          <p>Click on the markers to view the rainfall (in inches) in specific parts of Puerto Rico from Hurricane Maria.</p>
+        </div>
       </section>
 
       <section id="about">
+        <div id="page">
         <h1>About This Page</h1>
         <p>This page was created by me, Mary-Lou Watkinson. I decided to choose the topic of the 2017 Hurricanes for two reasons. The first reason is that I felt it was an important topic. All three of the hurricanes discussed on this page broke records and caused extensive damage in the areas they hit, and I wanted to put that into perspective using rainfall data. The second reason was because I wanted to see how I could put that data into a visual format, which in the real world could be used with an extensive story about the impact of the hurricanes. I created a map for each hurricane/location and included the specific rainfall data (in inches) for each. I also created a graph that compares what the normal average rainfall is in each area compared to the average rainfall they received during the hurricanes. The research for this project took a lot more time than I anticipated, and it was more difficult to find all of the data than I previously thought it would be. Because of that, the research became a huge portion of this for me. However, I still put forth effort into each aspect of the project, and I have produced something that I am proud of. I found the rainfall data for my graph from the National Oceanic and Atmospheric Association for <a href="https://www.ncdc.noaa.gov/cdo-web/datatools/normals">Texas</a>, <a href="https://www.ncdc.noaa.gov/cdo-web/datatools/normals">Florida</a> and <a href="http://www.weather.gov/sju/climo01">Puerto Rico.</a> My rainfall data in my maps also came from the NOAA for <a href="http://www.wpc.ncep.noaa.gov/discussions/nfdscc1.html">Hurricane Harvey</a>, <a href="http://www.wpc.ncep.noaa.gov/winter_storm_summaries/storm20/stormsum_7.html">Hurricane Irma</a> and <a href="http://www.weather.gov/sju/maria2017">Hurricane Maria.</a> I hope you enjoy what I have created!</p>
+      </div>
+      </section>
 
 
   <script src="scripts/places.json"></script>
