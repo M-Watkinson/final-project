@@ -13,23 +13,34 @@
 <body>
 
 <section id="bar">
-  <nav class="navbar navbar-default navbar-fixed-top">
+
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="#">2017 Hurricanes</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#data">Rainfall</a></li>
-      <li><a href="#harvey">Harvey</a></li>
-      <li><a href="#irma">Irma</a></li>
-      <li><a href="#maria">Maria</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#impact">Impact</a></li>
+        <li>
+          <a href="#data">Rainfall</a>
+        </li>
+        <li><a href="#harvey">Harvey</a></li>
+        <li><a href="#irma">Irma</a></li>
+        <li><a href="#maria">Maria</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 </section>
+
 
   <section id="impact">
     <h1>The Impact</h1>
@@ -40,16 +51,18 @@
 
   <section id="data">
     <h1>The Data</h1>
-  </section>
-
     <div id="graph">
       <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
       <div class="description">
         <p>Normal average rainfall for Texas, Florida and Puerto Rico in a month compared to the rainfall each place experienced during the hurricanes.</p>
       </div>
     </div>
+  </section>
 
       <section id="harvey">
+        <div class="title">
+          <h3>Hurricane Harvey in Texas</h3>
+        </div>
         <div id="map"></div>
         <div class="description">
           <p>Click on the markers to view the rainfall (in inches) in specific parts of Texas from Hurricane Harvey.</p>
@@ -57,6 +70,9 @@
       </section>
 
       <section id="irma">
+        <div class="title">
+          <h3>Hurricane Irma in Florida</h3>
+        </div>
         <div id="fl"></div>
         <div class="description">
           <p>Click on the markers to view the rainfall (in inches) in specific parts of Florida from Hurricane Irma.</p>
@@ -64,6 +80,9 @@
       </section>
 
       <section id="maria">
+        <div class="title">
+          <h3>Hurricane Maria in Puerto Rico</h3>
+        </div>
         <div id="rico"></div>
         <div class="description">
           <p>Click on the markers to view the rainfall (in inches) in specific parts of Puerto Rico from Hurricane Maria.</p>
@@ -85,6 +104,7 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
